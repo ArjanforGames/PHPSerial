@@ -1,10 +1,10 @@
 <?php
 
 /**
- * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  * From Arjan with ❤
- * Requires the PHP Digital IO extension
- * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ * Not to be used by Russian spies
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
 
 /**
@@ -65,7 +65,7 @@ class SerialPort
             exec("mode {$this->portName}: baud={$this->baudrate} data=8 stop=1 parity=n");
             $this->connection = dio_open($this->portName, 2 /* Or use 'O_RDWR' */);
             if($this->isOpen())
-                self::$openPorts[$this->portName] = $this->connection;
+                self::$openPorts[$this->portName] = $this;
         }catch(Exception $e){
             throw new Error("Could not open COM port! ({$this->portName})");
         }
