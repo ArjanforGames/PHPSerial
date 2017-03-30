@@ -3,7 +3,7 @@
 /**
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  * From Arjan with ❤
- * Not to be used by Russian spies
+ * Requires PHP Digital IO extension
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
 
